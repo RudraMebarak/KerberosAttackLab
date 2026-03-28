@@ -1,0 +1,62 @@
+# ==========================================
+# Kerberos Lab Custom .gitignore
+# ==========================================
+
+# 1. Virtualization & OS Images (CRITICAL)
+# Do not upload your Virtual Machines or ISOs!
+*.iso
+*.vmdk
+*.vdi
+*.vhd
+*.vhdx
+*.ova
+*.ovf
+*.qcow2
+*.vagrant/
+.vagrant/
+
+# 2. Captured Data & Hashes
+# Keep your cracked passwords and massive event logs local
+*.pcap
+*.pcapng
+*.evtx
+*.log
+*.hash
+*.hcmask
+*.potfile
+tickets/
+*.ccache
+*.kirbi
+
+# 3. Python (For your attack/detection scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+venv/
+.env
+
+# 4. OS & Editor Junk
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.swp
